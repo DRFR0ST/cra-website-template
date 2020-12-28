@@ -1,3 +1,4 @@
+// Default theme can be found here: https://material-ui.com/customization/default-theme/
 import { createMuiTheme } from "@material-ui/core";
 
 export const LIGHT_THEME = createMuiTheme({

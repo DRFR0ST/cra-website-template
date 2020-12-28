@@ -1,6 +1,6 @@
 {
   "name": "cra-website-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "author": "Mike Eling <mike.eling97@gmail.com>",
   "dependencies": {

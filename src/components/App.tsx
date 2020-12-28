@@ -1,7 +1,7 @@
 import React from 'react';
 import { LitteraProvider } from 'react-littera';
 import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider, useMediaQuery } from '@material-ui/core';
+import { ThemeProvider, useMediaQuery, CssBaseline } from '@material-ui/core';
 
 import { LOCALES } from "utils/language";
 import { LIGHT_THEME, DARK_THEME } from "utils/theme";
@@ -17,13 +17,16 @@ function App() {
   );
 
   return (
-    <ThemeProvider theme={theme}>
-      <LitteraProvider initialLocale="pl_PL" locales={LOCALES}>
-        <Router>
-          <Routes />
-        </Router>
-      </LitteraProvider>
-    </ThemeProvider>
+    <>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <LitteraProvider initialLocale="pl_PL" locales={LOCALES}>
+          <Router>
+            <Routes />
+          </Router>
+        </LitteraProvider>
+      </ThemeProvider>
+    </>
   );
 }
 
